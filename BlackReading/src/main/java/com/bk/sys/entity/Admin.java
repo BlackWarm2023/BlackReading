@@ -1,5 +1,7 @@
 package com.bk.sys.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -21,6 +23,8 @@ public class Admin implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty("id")
+    // 设置 id 用 uuid 策略自增,此方法是 MP 封装好的
+    @TableId(type = IdType.ASSIGN_UUID)
     private String id;
 
     @ApiModelProperty("创建时间")
