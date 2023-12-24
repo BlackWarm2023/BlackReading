@@ -1,13 +1,13 @@
-package com.bk.blackreading;
+package com.bk;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BlackReadingApplication {
+public class BlackApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(BlackReadingApplication.class, args);
+        SpringApplication.run(BlackApplication.class, args);
     }
 
 }
