@@ -13,7 +13,7 @@ import java.util.Collections;
  */
 public class CodeGenerator {
     public static void main(String[] args) {
-
+//
         // 数据库连接
         String url = "jdbc:mysql://localhost:3306/blackreading?useUnicode=true&charcterEncoding=utf-8&serverTimezone=Asia/Shanghai";
         String username = "root";

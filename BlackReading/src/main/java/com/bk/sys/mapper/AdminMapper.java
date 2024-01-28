@@ -15,7 +15,7 @@ import org.apache.ibatis.annotations.Param;
  */
 @Mapper
 public interface AdminMapper extends BaseMapper<Admin> {
-
+//
     Admin getAdminByNameAndPassword(@Param("name") String name, @Param("password") String password);
 
     Admin getAdminByByNameAndPassword(@Param("byname") String byname, @Param("password") String password);

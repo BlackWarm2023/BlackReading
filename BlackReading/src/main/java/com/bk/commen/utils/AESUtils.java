@@ -18,7 +18,7 @@ import java.util.Base64;
  * @date: 2024年 01月 23日  21:17
  */
 public class AESUtils {
-    /**
+    /****
      * 使用 AES 对称加密算法对文章进行加密
      *
      * @param article 要加密的文章

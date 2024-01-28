@@ -32,7 +32,7 @@ import java.util.concurrent.TimeUnit;
 @Service
 @Slf4j
 public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements IAdminService {
-
+//
     @Autowired
     private AdminMapper adminMapper;
 

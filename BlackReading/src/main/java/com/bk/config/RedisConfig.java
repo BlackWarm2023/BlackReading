@@ -30,7 +30,7 @@ public class RedisConfig {
 
     @Autowired
     private RedisConnectionFactory factory;
-
+//
     @Bean
     public RedisTemplate redisTemplate(){
         RedisTemplate<String, Object> redisTemplate = new RedisTemplate<>();

@@ -16,7 +16,7 @@ public class CorsConfig {
 
     @Bean
     public CorsFilter corsFilter(){
-
+//
         CorsConfiguration corsConfiguration = new CorsConfiguration();
 //        * 允许所有地址跨域
 //        corsConfiguration.addAllowedOrigin("*");

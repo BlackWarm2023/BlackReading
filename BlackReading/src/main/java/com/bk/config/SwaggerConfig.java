@@ -59,7 +59,7 @@ public class SwaggerConfig {
                 new SecurityReference("X-Token", authorizationScopes)
         );
     }
-
+//
     private ApiInfo apiInfo(){
         return new ApiInfoBuilder()
                 .title("Black在线阅读平台接口文档")

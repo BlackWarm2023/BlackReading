@@ -10,7 +10,7 @@ spring:
   redis:
     port: 6379
     host: localhost
-
+#
 logging:
   level:
     com.bk: debug

@@ -19,7 +19,7 @@ public class AESKeyGenerator {
         new java.security.SecureRandom().nextBytes(key);
         return Base64.getEncoder().encodeToString(key);
     }
-
+//
     public static void main(String[] args) {
         String key = generateRandomKey(16); // 生成随机密钥，长度为16字节（128位）
         System.out.println("AES 密钥:: " + key);

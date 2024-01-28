@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 public class MPConfig {
-    /**
+    /****
      * 添加分页插件
      */
     @Bean

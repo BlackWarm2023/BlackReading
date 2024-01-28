@@ -59,7 +59,7 @@ public class RSAUtils {
         Cipher cipher = Cipher.getInstance(ALGORITHM);
         cipher.init(Cipher.DECRYPT_MODE, priKey);
         return new String(cipher.doFinal(inputByte));
-    }
+    }//
     public static void main(String[] args) throws Exception {
         RSAUtils rsaUtils = new RSAUtils();
         String plaintext = "你好";

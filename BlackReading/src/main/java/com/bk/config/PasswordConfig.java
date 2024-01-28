@@ -12,7 +12,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
  */
 @Configuration
 public class PasswordConfig {
-
+//
     /**
      * 创建密码编码器的 Bean
      * @return 密码编码器

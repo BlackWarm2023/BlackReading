@@ -30,7 +30,7 @@ import java.util.Map;
 @RequestMapping("/sys/admin")
 // @CrossOrigin 跨域处理,但每个都要加,比较麻烦,还是使用配置类比较方便
 public class AdminController {
-
+//
     @Autowired
     public IAdminService adminService;
 
