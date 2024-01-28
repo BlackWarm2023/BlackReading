@@ -66,7 +66,6 @@ CREATE TABLE `b_book` (
 	`update_id` VARCHAR(32) NOT NULL COMMENT '修改人id',
 	`del_flag` INT(1) NOT NULL COMMENT '删除标记',
 	`name` VARCHAR(200) NOT NULL COMMENT '书名',
-	`picture` VARCHAR(200) NOT NULL COMMENT '封面',
 	`synopsis` TINYTEXT NOT NULL COMMENT '简介',
 	`auther_id` VARCHAR(32) NOT NULL COMMENT '作者id',
 	`auther_name` VARCHAR(200) NOT NULL COMMENT '作者名',

@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author BlackWarm
- * @since 2023-12-25
+ * @since 2023-12-23
  */
 public interface IUserChapterService extends IService<UserChapter> {
 
