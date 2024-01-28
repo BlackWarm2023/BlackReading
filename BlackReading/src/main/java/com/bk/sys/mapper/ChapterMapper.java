@@ -10,7 +10,7 @@ import org.apache.ibatis.annotations.Mapper;
  * </p>
  *
  * @author BlackWarm
- * @since 2023-12-25
+ * @since 2023-12-23
  */
 @Mapper
 public interface ChapterMapper extends BaseMapper<Chapter> {
