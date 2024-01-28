@@ -2,4 +2,41 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.bk.sys.mapper.AdminMapper">
 
+    <select id="getAdminByNameAndPassword" parameterType="admin" resultType="com.bk.sys.entity.Admin">
+        select
+            admin.*
+        from
+            b_admin admin
+        where
+            admin.name = #{name}
+        and
+            admin.password = #{password}
+        and
+            admin.del_flag = 0
+    </select>
+
+    <select id="getAdminByByNameAndPassword" resultType="com.bk.sys.entity.Admin">
+        select
+            admin.*
+        from
+            b_admin admin
+        where
+            admin.byname = #{byname}
+          and
+            admin.password = #{password}
+          and
+            admin.del_flag = 0
+    </select>
+
+    <select id="getAdminById" resultType="com.bk.sys.entity.Admin">
+        select
+            admin.*
+        from
+            b_admin admin
+        where
+            admin.id = #{id}
+        and
+            admin.del_flag = 0
+    </select>
+
 </mapper>

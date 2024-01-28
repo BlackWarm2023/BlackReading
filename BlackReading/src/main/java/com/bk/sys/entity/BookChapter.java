@@ -14,7 +14,7 @@ import io.swagger.annotations.ApiModelProperty;
  * </p>
  *
  * @author BlackWarm
- * @since 2023-12-23
+ * @since 2023-12-25
  */
 @TableName("b_book_chapter")
 @ApiModel(value = "BookChapter对象", description = "")
@@ -23,6 +23,7 @@ public class BookChapter implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty("id")
+    // 设置 id 用 uuid 策略自增,此方法是 MP 封装好的
     @TableId(type = IdType.ASSIGN_UUID)
     private String id;
 

@@ -1,4 +1,4 @@
-package com.bk.code;
+package com.bk.commen.generator;
 
 import com.baomidou.mybatisplus.generator.FastAutoGenerator;
 import com.baomidou.mybatisplus.generator.config.OutputFile;
@@ -20,19 +20,22 @@ public class CodeGenerator {
         String password = "123456";
         // 设置模块名字
         String moduleName = "sys";
+        // 设置自动生成的 mapper.xml 生成路径
         String mapperLocation = "D:\\IDEA\\IDEA_WORK_SPACE\\BlackReading\\src\\main\\resources\\mapper\\" + moduleName;
 
         // 需要自动生成对应 java 文件的表
         String tables = "b_admin,b_book,b_book_chapter,b_book_tags,b_chapter," +
                 "b_menu,b_role,b_role_menu,b_tags,b_user,b_user_book," +
                 "b_user_chapter,b_user_role";
+        // 指定代码生成路径
+        String outCodeLocation = "D:\\IDEA\\IDEA_WORK_SPACE\\BlackReading\\src\\main\\java";
 
         FastAutoGenerator.create(url, username, password)
                 .globalConfig(builder -> {
                     builder.author("BlackWarm") // 设置作者
                             .enableSwagger() // 开启 swagger 模式
 //                            .fileOverride() // 覆盖已生成文件
-                            .outputDir("D:\\IDEA\\IDEA_WORK_SPACE\\BlackReading\\src\\main\\java"); // 指定输出目录
+                            .outputDir(outCodeLocation); // 指定输出目录
                 })
                 .packageConfig(builder -> {
                     builder.parent("com.bk") // 设置父包名

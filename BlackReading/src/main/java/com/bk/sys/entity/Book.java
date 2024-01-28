@@ -14,7 +14,7 @@ import io.swagger.annotations.ApiModelProperty;
  * </p>
  *
  * @author BlackWarm
- * @since 2023-12-23
+ * @since 2023-12-25
  */
 @TableName("b_book")
 @ApiModel(value = "Book对象", description = "")
@@ -23,6 +23,7 @@ public class Book implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty("id")
+    // 设置 id 用 uuid 策略自增,此方法是 MP 封装好的
     @TableId(type = IdType.ASSIGN_UUID)
     private String id;
 
@@ -43,6 +44,9 @@ public class Book implements Serializable {
 
     @ApiModelProperty("书名")
     private String name;
+
+    @ApiModelProperty("封面")
+    private String picture;
 
     @ApiModelProperty("简介")
     private String synopsis;
@@ -115,6 +119,14 @@ public class Book implements Serializable {
         this.name = name;
     }
 
+    public String getPicture() {
+        return picture;
+    }
+
+    public void setPicture(String picture) {
+        this.picture = picture;
+    }
+
     public String getSynopsis() {
         return synopsis;
     }
@@ -165,6 +177,7 @@ public class Book implements Serializable {
             ", updateId = " + updateId +
             ", delFlag = " + delFlag +
             ", name = " + name +
+            ", picture = " + picture +
             ", synopsis = " + synopsis +
             ", autherId = " + autherId +
             ", autherName = " + autherName +
