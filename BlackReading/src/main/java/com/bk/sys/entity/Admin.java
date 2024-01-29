@@ -3,10 +3,12 @@ package com.bk.sys.entity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import java.io.Serializable;
-import java.time.LocalDateTime;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
+
+import java.io.Serializable;
+import java.time.LocalDateTime;
 
 /**
  * <p>
@@ -14,9 +16,10 @@ import io.swagger.annotations.ApiModelProperty;
  * </p>
  *
  * @author BlackWarm
- * @since 2023-12-23
+ * @since 2023-12-25
  */
 @TableName("b_admin")
+@Data
 @ApiModel(value = "Admin对象", description = "")
 public class Admin implements Serializable {
 
@@ -60,117 +63,6 @@ public class Admin implements Serializable {
     @ApiModelProperty("等级")
     private Integer level;
 
-    public String getId() {
-        return id;
-    }
 
-    public void setId(String id) {
-        this.id = id;
-    }
 
-    public LocalDateTime getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(LocalDateTime createTime) {
-        this.createTime = createTime;
-    }
-
-    public String getCreateId() {
-        return createId;
-    }
-
-    public void setCreateId(String createId) {
-        this.createId = createId;
-    }
-
-    public LocalDateTime getUpdateTime() {
-        return updateTime;
-    }
-
-    public void setUpdateTime(LocalDateTime updateTime) {
-        this.updateTime = updateTime;
-    }
-
-    public String getUpdateId() {
-        return updateId;
-    }
-
-    public void setUpdateId(String updateId) {
-        this.updateId = updateId;
-    }
-
-    public Integer getDelFlag() {
-        return delFlag;
-    }
-
-    public void setDelFlag(Integer delFlag) {
-        this.delFlag = delFlag;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getByname() {
-        return byname;
-    }
-
-    public void setByname(String byname) {
-        this.byname = byname;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public Integer getPhone() {
-        return phone;
-    }
-
-    public void setPhone(Integer phone) {
-        this.phone = phone;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public Integer getLevel() {
-        return level;
-    }
-
-    public void setLevel(Integer level) {
-        this.level = level;
-    }
-
-    @Override
-    public String toString() {
-        return "Admin{" +
-            "id = " + id +
-            ", createTime = " + createTime +
-            ", createId = " + createId +
-            ", updateTime = " + updateTime +
-            ", updateId = " + updateId +
-            ", delFlag = " + delFlag +
-            ", name = " + name +
-            ", byname = " + byname +
-            ", password = " + password +
-            ", phone = " + phone +
-            ", email = " + email +
-            ", level = " + level +
-        "}";
-    }
 }

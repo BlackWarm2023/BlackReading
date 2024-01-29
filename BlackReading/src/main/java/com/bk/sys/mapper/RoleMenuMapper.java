@@ -1,7 +1,7 @@
 package com.bk.sys.mapper;
 
-import com.bk.sys.entity.RoleMenu;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.bk.sys.entity.RoleMenu;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
@@ -10,7 +10,7 @@ import org.apache.ibatis.annotations.Mapper;
  * </p>
  *
  * @author BlackWarm
- * @since 2023-12-23
+ * @since 2023-12-25
  */
 @Mapper
 public interface RoleMenuMapper extends BaseMapper<RoleMenu> {

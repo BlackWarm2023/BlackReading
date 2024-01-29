@@ -1,7 +1,7 @@
 package com.bk.sys.service;
 
-import com.bk.sys.entity.BookChapter;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.bk.sys.entity.BookChapter;
 
 /**
  * <p>
@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author BlackWarm
- * @since 2023-12-23
+ * @since 2023-12-25
  */
 public interface IBookChapterService extends IService<BookChapter> {
 

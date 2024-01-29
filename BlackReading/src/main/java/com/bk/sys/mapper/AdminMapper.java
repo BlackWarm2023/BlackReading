@@ -1,9 +1,9 @@
 package com.bk.sys.mapper;
 
-import com.bk.sys.entity.Admin;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import lombok.extern.slf4j.Slf4j;
+import com.bk.sys.entity.Admin;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * <p>
@@ -11,9 +11,14 @@ import org.apache.ibatis.annotations.Mapper;
  * </p>
  *
  * @author BlackWarm
- * @since 2023-12-23
+ * @since 2023-12-25
  */
 @Mapper
 public interface AdminMapper extends BaseMapper<Admin> {
 
+    Admin getAdminByNameAndPassword(@Param("name") String name, @Param("password") String password);
+
+    Admin getAdminByByNameAndPassword(@Param("byname") String byname, @Param("password") String password);
+
+    Admin getAdminById(@Param("id") String id);
 }

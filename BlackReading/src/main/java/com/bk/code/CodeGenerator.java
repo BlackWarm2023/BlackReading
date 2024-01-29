@@ -19,7 +19,7 @@ public class CodeGenerator {
         String username = "root";
         String password = "123456";
         // 设置模块名字
-        String moduleName = "sys";
+        String moduleName = "mapper/sys";
         String mapperLocation = "D:\\IDEA\\IDEA_WORK_SPACE\\BlackReading\\src\\main\\resources\\mapper\\" + moduleName;
 
         // 需要自动生成对应 java 文件的表

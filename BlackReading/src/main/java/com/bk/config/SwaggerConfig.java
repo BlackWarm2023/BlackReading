@@ -17,6 +17,7 @@ import java.util.List;
 
 /**
  * @Description: Swagger 文档工具,能够动态生成文档
+ *  Swagger 的登录地址: http:/localhost:8383/swagger-ui/index.html#/
  * @author: BlackWarm
  * @date: 2023年 12月 24日  11:48
  */
@@ -61,10 +62,10 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo(){
         return new ApiInfoBuilder()
-                .title("前后端分离系统接口文档")
+                .title("Black在线阅读平台接口文档")
                 .description("Black在线阅读平台项目实战")
                 .version("1.0")
-                .contact(new Contact("ljx","https://blackwarm2023.github.io/","BlackWarm2023@163.com"))
+                .contact(new Contact("BlackWarm2023","https://blackwarm2023.github.io/","BlackWarm2023@163.com"))
                 .build();
     }
 }
